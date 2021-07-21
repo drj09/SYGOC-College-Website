@@ -1,0 +1,10 @@
+.courseButton {
+    background-color: white; 
+    color: #FB9300; 
+    border: 2px solid #FB9300;
+  }
+  
+  .courseButton:hover {
+    background-color: #FB9300;
+    color: white;
+  }
