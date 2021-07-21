@@ -7,14 +7,16 @@
     <script src="uikit/dist/js/uikit-icons.min.js"></script>
     <script src="assets/js/uikit.min.js"></script>
     <script src="assets/js/uikit-icons.min.js"></script>  
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
-    <title>College Website</title>
-</head>
-<body style="max-width: 1980px;">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
 
-    <nav class="uk-navbar-container" style="background-color: ;" uk-navbar style="padding-left: 50px ;padding-right: 50px;">
+    <title>College Website for Sunder Yadav Group Of Colleges</title>
+</head>
+<body>
+<div class="uk-margin-right uk-margin-left uk-card uk-card-default" >
+    <nav class="uk-navbar-container " uk-navbar style="padding-left: 50px ;margin-bottom: 10px;padding-right: 50px;">
         <div class="uk-navbar-left">
             <ul class="uk-navbar-nav">
                 <li class="uk-active"><a href="#">LOGO OF SYGOC</a></li>
@@ -22,7 +24,17 @@
         </div>
         <div class="uk-navbar-right">
             <ul class="uk-navbar-nav">
-                <li class="uk-active"><a href="#">Home</a></li>
+                <li>
+                    <a href="#">About</a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li><a href="#">Overview</a></li>
+                            <li><a href="#">Message from leaders</a></li>
+                            <li><a href="#">About SYGOC</a></li>
+                            <li><a href="#">About ##### City</a></li>
+                        </ul>
+                    </div>
+                </li>
                 <li>
                     <a href="#">Colleges</a>
                     <div class="uk-navbar-dropdown">
@@ -34,24 +46,33 @@
                         </ul>
                     </div>
                 </li>
-                <li><a href="#">Admission</a></li>
-                <li><a href="#">Cources</a></li>
-                <li><a href="#">Administration</a></li>
+                <li>
+                    <a href="#">Admission</a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li><a href="#">Overview</a></li>
+                            <li><a href="#">Addmission Process</a></li>
+                            <li><a href="#">Fee Structure</a></li>
+                            <li><a href="#">Scholarships</a></li>
+                        </ul>
+                    </div>
+                </li>
+                
                 <li><a href="#">Gallery</a></li>
-                <li><a class="" href="#"><button class="uk-button uk-button-danger">Contact</button></a></li>
+                <li><a class="" href="#"><button class="uk-button uk-button-danger">Contact US</button></a></li>
             </ul>
     
         </div>
     </nav>
+</div>
 
-
-    <div class="uk-height-large" style='background: white;margin: auto;'>
+    <div class="" style='background: white;margin: auto;'>
         <div class="uk-flex-middle uk-grid-collapse" style="" uk-grid>
             <div class="uk-width-1-2@m uk-padding-large uk-flex-first" uk-scrollspy="cls: uk-animation-slide-right;delay: 600">
                 <h1 class="" style="font-family: 'Zen Tokyo Zoo', cursive;">Your Next Step of <br> Career</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae consequatur blanditiis ut necessitatibus temporibus deserunt, non beatae eligendi quia doloremque incidunt dolores ad corporis, sint nostrum. Aspernatur consectetur ea ratione?</p>
-                <a class="uk-button uk-card-hover uk-button-medium"
-                    style="border-radius: 50px;background: #F7A440;color: white;" href="shop"> All Cources </a>
+                <a class="uk-button uk-button-medium"
+                    style="border-radius: 50px;border: 2px;border-color: #FB9300;border-style:solid; color: #FB9300;" href="cources"> All Cources </a>
                 
                 </div>
             <div class="uk-width-1-2@m " uk-scrollspy="cls: uk-animation-slide-left;delay: 200">
@@ -62,10 +83,43 @@
 
     </div>
 
-    <div class="">
-        <hr class="uk-divider-icon">
-        <h3 class="uk-text-center@m"><img class="" src="https://img.icons8.com/bubbles/50/000000/education.png"/> All About SYGOC College <img class="" src="https://img.icons8.com/bubbles/50/000000/education.png"/></h3>
+    <!--<img class="" src="https://img.icons8.com/bubbles/50/000000/education.png"/>-->
+
+    <div class="uk-margin-medium"  style="background-color: #FB9300;">
+
+
+
+        <h1 class="uk-text-center" style="font-family: 'Quicksand', sans-serif;"><span> This is what we offer you </span></h1>
+
+
     </div>
+
+    <div class="">
+        <ul uk-accordion>
+            <li class="uk-open">
+                <a class="uk-accordion-title" href="#">Item 1</a>
+                <div class="uk-accordion-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">Item 2</a>
+                <div class="uk-accordion-content">
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href="#">Item 3</a>
+                <div class="uk-accordion-content">
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+
+
 
 </body>
 </html>
