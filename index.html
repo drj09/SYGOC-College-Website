@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/uikit.min.css"/>
     <link rel="stylesheet" href="assets/css/main.css"/>
-    
-    <script src="uikit/dist/js/uikit-icons.min.js"></script>
+    <script src="assets/js/uikit-icons.min.js"></script>
     <script src="assets/js/uikit.min.js"></script>
     <script src="assets/js/uikit-icons.min.js"></script>  
     
@@ -17,7 +16,7 @@
     <title>College Website for Sunder Yadav Group Of Colleges</title>
 </head>
 <body>
-    <div class="uk-margin-right uk-margin-left uk-card uk-card-default" >
+    <div class="uk-margin-right uk-margin-left uk-card uk-card-default uk-visible@m"  >
         <nav class="uk-navbar-container " uk-navbar style="padding-left: 50px ;margin-bottom: 10px;padding-right: 50px;">
             <div class="uk-navbar-left">
                 <ul class="uk-navbar-nav">
@@ -68,6 +67,58 @@
         </nav>
     </div>
 
+    <!-- NAVBAR FOR SMALL SCREEN PHONES -->
+    <div class="uk-hidden@m">
+        <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-nav-primary">Primary Nav</button>
+
+        <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-nav">Default Nav</button>
+
+        <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
+            <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+                <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                    <li class="uk-active"><a href="#">Active</a></li>
+                    <li class="uk-parent">
+                        <a href="#">Parent</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="#">Sub item</a></li>
+                            <li><a href="#">Sub item</a></li>
+                        </ul>
+                    </li>
+                    <li class="uk-nav-header">Header</li>
+                    <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a></li>
+                    <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Item</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div id="offcanvas-nav" uk-offcanvas="mode: push; overlay: true">
+            <div class="uk-offcanvas-bar">
+
+                <ul class="uk-nav uk-nav-default">
+                    <li class="uk-active"><a href="#">Active</a></li>
+                    <li class="uk-parent">
+                        <a href="#">Parent</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="#">Sub item</a></li>
+                            <li><a href="#">Sub item</a></li>
+                        </ul>
+                    </li>
+                    <li class="uk-nav-header">Header</li>
+                    <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a></li>
+                    <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Item</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
+
     <div class="" style='background: white;'>
         <div class="uk-flex-middle uk-grid-collapse uk-padding-large uk-padding-remove-vertical	" style="" uk-grid>
             <div class="uk-width-1-2@m  uk-flex-first" uk-scrollspy="cls: uk-animation-slide-right;delay: 600">
@@ -86,11 +137,19 @@
 
     <!--<img class="" src="https://img.icons8.com/bubbles/50/000000/education.png"/>-->
 
-    <div class="uk-margin-medium"  style="background-color: #FB9300;">
+    <div class="uk-margin-medium uk-padding-large"  style="background-color:#f0506e;color: white;">
+
+        <h1 class="uk-text-center" style="font-family: 'Quicksand', sans-serif;color: white;"><span> This is what we offer you </span></h1>
+
+        <div class="uk-column-1-2 uk-column-divider">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+        
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+        </div>
 
 
-
-        <h1 class="uk-text-center" style="font-family: 'Quicksand', sans-serif;"><span> This is what we offer you </span></h1>
 
 
     </div>
@@ -103,7 +162,7 @@
 
 
         <h1 class="uk-text-center" style="font-family: 'Quicksand', sans-serif;color: white;"><span> Do you have any questions? <br> We will be happy to answer all of them </span></h1>
-        <div class="uk-flex uk-flex-center uk-flex-wrap">
+        <div class="uk-flex uk-flex-center uk-flex-wrap uk-padding-large">
             <div>
                 <div class="uk-card uk-card-default uk-card-hover uk-card-body ">
                     <h3 class="uk-card-title">Default</h3>
